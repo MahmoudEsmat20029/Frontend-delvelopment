@@ -1,0 +1,199 @@
+/* =================== Global Styles =================== */
+:root {
+  --font-color: #fff;
+  --bg-color: rgba(17, 34, 51, 0.4);
+  --blue-bg: rgba(11, 11, 181, 0.753);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--font-color);
+}
+
+body {
+  background: linear-gradient(135deg, #001020, #001);
+  color: var(--font-color);
+  overflow-x: hidden;
+}
+
+/* =================== Layout Wrapper =================== */
+.fake-body {
+  display: flex;
+  transition: 0.3s ease;
+}
+
+/* =================== Sidebar (Aside) =================== */
+aside {
+  padding: 10px;
+  background-color: var(--bg-color);
+  width: 60px;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+aside:hover {
+  width: 230px;
+}
+
+/* ---------- Profile Section ---------- */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  margin-bottom: 10px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid;
+  transition: 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.profile p {
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.profile p:hover {
+  text-shadow: 2px 2px 5px red;
+  cursor: pointer;
+}
+
+/* ---------- Sidebar Menu ---------- */
+aside ul {
+  list-style: none;
+  white-space: nowrap;
+}
+
+aside ul li {
+  padding: 8px 11px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+aside ul li:hover,
+#home,
+.container .box:hover,
+tbody td:hover {
+  background-color: rgba(54, 85, 116, 0.4);
+  cursor: pointer;
+}
+
+aside ul li span {
+  margin-right: 20px;
+}
+
+/* ---------- Logout Button ---------- */
+#log-out {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(200, 47, 47);
+  padding-right: 50px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#log-out:hover {
+  background-color: red;
+}
+
+/* ---------- Sidebar Scrollbar ---------- */
+aside::-webkit-scrollbar {
+  width: 5px;
+}
+aside::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* =================== Main Content =================== */
+main {
+  width: 100%;
+}
+
+/* ---------- Navigation Bar ---------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-bg);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 20px;
+}
+
+/* ---------- Dashboard Boxes ---------- */
+.container {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container .box {
+  background-color: var(--bg-color);
+  height: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* =================== Table Styles =================== */
+table {
+  margin: 10px;
+  width: 98%;
+  text-align: center;
+  border-spacing: 6px;
+}
+
+thead th,
+tbody td {
+  background-color: var(--blue-bg);
+  border-radius: 10px;
+  padding: 8px 0;
+  transition: 0.3s ease;
+}
+
+tbody td {
+  background-color: var(--bg-color);
+}
+
+/* ---------- Status Labels ---------- */
+.green span,
+.yellow span {
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.green span {
+  background-color: rgb(9, 87, 9);
+}
+
+.yellow span {
+  background-color: rgb(224, 224, 32);
+  color: black;
+}
