@@ -1,0 +1,247 @@
+/* 
+  Author: Mahmoud Esmat
+  date  : 3-11-2025
+*/
+
+/* ================= for all elements start ================= */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-color: #1b84bb;
+  --font-color: #fff;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.fake-body {
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  .fake-body {
+    width: 90%;
+  }
+}
+
+input, 
+button {
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.265);
+}
+
+button:hover {
+  background-color: gray;
+}
+/* ================= for all elements end ================= */
+
+/* ================= for search part strat ================= */
+.fake-body h2 {
+  text-align: center;
+  margin: 10px;
+  padding: 3px;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  border-radius: 6px;
+}
+
+.search {
+  margin: 0 20px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search input {
+  flex-grow: 1;
+  padding: 5px 10px;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.search button span {
+  font-size: 20px;
+}
+/* ================= for search part end ================= */
+
+/* ================= for bar strat ================= */
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+.container button {
+  padding: 8px;
+  background-color: red;
+  color: var(--font-color);
+  border: none;
+}
+
+.container button:hover {
+  background-color: #c60a36;
+  box-shadow: 1px 1px 2px black;
+}
+
+.container button:focus {
+  background-color: green;
+}
+/* ================= for bar end ================= */
+
+/* ================= for create part strat ================= */
+.create-box {
+  /* display: flex; */
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.create-new-product {
+  width: 55%;
+  margin: auto;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .create-new-product {
+    width: 70%;
+  }
+}
+
+.product-title,
+.product-price,
+.product-calculation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+}
+
+.create-new-product input:hover {
+  transform: scale(1.1);
+}
+
+.create-new-product input {
+  padding: 8px;
+  flex-grow: 1;
+  outline: none;
+  transition: 1s all;
+  margin: 5px 0;
+}
+
+
+.product-price input {
+  width: 50px;
+}
+
+.product-price p {
+  background-color: red;
+  color: var(--font-color);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.submit {
+  text-align: center;
+}
+
+.submit button {
+  padding: 7px 60px;
+  color: var(--font-color);
+  margin: 20px 5px 0;
+}
+
+.submit #ok {
+  background-color: rgb(0, 193, 48, 0.8);
+}
+
+.submit #ok:hover {
+  background-color: rgb(0, 255, 64);
+  box-shadow: 2px 2px 5px;
+}
+
+.submit #cancel {
+  background-color: #c60a36;
+}
+
+.submit #cancel:hover {
+  background-color: red;
+  box-shadow: 2px 2px 5px;
+}
+
+/* ================= for create part end ================= */
+
+/* ================= for table strat ================= */
+.fake-body h3 {
+  text-align: center;
+  text-shadow: 1px 1px 1px yellow;
+}
+
+.fake-body h3:hover {
+  text-shadow: 1px 1px 1px red;
+}
+
+table {
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+  border-spacing: 1px;
+}
+
+th {
+  background-color: #b3082dba;
+}
+
+th,
+td {
+  padding: 7px;
+  border: 0.5px solid #1b84bb;
+  border-radius: 5px;
+}
+
+.update,
+.delete {
+  padding: 3px;
+  border-radius: 5px;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.update {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.update:hover {
+  background-color: blue;
+}
+
+.delete {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.delete:hover {
+  background-color: red;
+}
+/* ================= for table end ================= */
