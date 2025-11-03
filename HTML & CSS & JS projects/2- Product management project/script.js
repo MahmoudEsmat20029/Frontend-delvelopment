@@ -107,7 +107,7 @@ okBtn.addEventListener("click", () => {
       discount.value =
       category.value =
       count.value =
-      totalCalc.innerHtml =
+      totalCalc.innerHTML =
         "";
     createBox.style.display = "none";
   }
@@ -198,4 +198,5 @@ let namePrompt = prompt("Enter Your name:", "your name ...");
 if (name !== "") {
   name.innerHTML = namePrompt;
 }
+
 
