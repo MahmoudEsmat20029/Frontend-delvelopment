@@ -119,9 +119,15 @@ cancelBtn.addEventListener("click", () => {
 
 renameBtn.addEventListener("click", () => {
   let namePrompt = prompt("Enter Your name:", "your name ...");
+  localStorage.setItem("name", namePrompt);
 
-  if (name !== "") {
+  if (
+    localStorage.getItem("name") !== "" &&
+    localStorage.getItem("name") !== "null"
+  ) {
     name.innerHTML = namePrompt;
+  } else {
+    name.innerHTML = "Unknown";
   }
 });
 
@@ -193,10 +199,16 @@ function toStoreDataToLocalStorage() {
 // ================ initial call ================
 productsDisplay();
 
-let namePrompt = prompt("Enter Your name:", "your name ...");
-
-if (name !== "") {
-  name.innerHTML = namePrompt;
+if (localStorage.getItem("name") == null) {
+  let namePrompt = prompt("Enter Your name:", "your name ...");
+  localStorage.setItem("name", namePrompt);
 }
 
-
+if (
+  localStorage.getItem("name") !== "" &&
+  localStorage.getItem("name") !== "null"
+) {
+  name.innerHTML = localStorage.getItem("name");
+} else {
+  name.innerHTML = "Unknown";
+}
