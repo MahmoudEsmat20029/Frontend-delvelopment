@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #123;
+}
+
+button {
+  padding: 10px 30px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.msg {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  overflow: hidden;
+}
+
+.toast {
+  width: 300px;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 15px;
+  position: relative;
+  transform: translateX(100%);
+  animation: fromright 0.5s forwards;
+}
+
+@keyframes fromright {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.toast::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: green;
+  animation: back 5s linear forwards;
+}
+
+@keyframes back {
+  100% {
+    width: 0;
+  }
+}
+
+.fail {
+  color: red;
+}
+
+.fail::before {
+  background-color: red;
+}
+
+.invalid {
+  color: orange;
+}
+
+.invalid::before {
+  background-color: orange;
+}
