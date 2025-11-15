@@ -1,0 +1,158 @@
+/* ================ for all ================ */
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #123;
+}
+
+/* ================ Instructions ================ */
+#bluer-div {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#instruction-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 24px;
+  width: 80%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#instruction-text h2 {
+  color: #000;
+}
+
+#instruction-text ul {
+  margin-left: 20px;
+  color: #000;
+}
+
+#instruction-text ul li {
+  margin: 15px;
+  color: #000;
+
+}
+
+/* closed button */
+#instruction-text div {
+  text-align: center;
+}
+
+#close-btn,
+#open-btn {
+  margin: 20px 0 0 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#open-btn {
+  margin: 0;
+}
+
+#close-btn:hover,
+#open-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ================== main ================== */
+main {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.char {
+  width: 120px;
+  height: 120px;
+  border-style: solid;
+  border-width: 40px;
+  border-color: #123;
+  border-radius: 50%;
+}
+
+.reslut #result-text {
+  display: none;
+  font-size: 40px;
+}
+
+/* ================== container ================== */
+.container {
+  background-color: rgba(64, 100, 136, 0.5);
+  margin: 50px auto;
+  width: 80%;
+  height: 500px;
+  max-width: 600px;
+  position: relative;
+}
+
+.container header {
+  background-color: rgba(64, 100, 136, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.container .arrows {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container .arrows button {
+  background-color: rgba(64, 100, 136, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#up {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#down {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+#left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#right {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Test</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="fake-body">
+
+      <!-- bluer div start -->
+      <div id="bluer-div">
+
+        <!-- Instruction box start -->
+        <div id="instruction-text" class="hidden">
+          <h2>Instructions</h2>
+          <ul>
+            <li>Stand about 2-3 meters away from the screen.</li>
+            <li>Make sure the room is well-lit and avoid any reflections on the screen.</li>
+            <li>Wear your glasses if you need them.</li>
+            <li>Focus on the circle and try not to move your head while it appears.</li>
+            <li>Press the arrow corresponding to the direction of the gap in the circle: ↑ for up, ↓ for down, ← for
+              left, → for right.</li>
+            <li>Each time you press an arrow, the next circle will appear slightly smaller.</li>
+            <li>Try to answer quickly and accurately, but do not rush before clearly seeing the circle.</li>
+            <li>After finishing the test, your final score will be displayed on the screen.</li>
+          </ul>
+          <div>
+            <button id="close-btn">Close instructions</button>
+          </div>
+        </div>
+        <!-- Instruction box end -->
+
+      </div>
+      <!-- bluer div end -->
+
+    </div>
+
+
+    <div class="container">
+      <header>
+        <button id="open-btn">See instructions</button>
+        <p class="questionsNumber"></p>
+      </header>
+
+      <main>
+        <div class="char"></div>
+
+        <!-- Result Show start -->
+        <div class="reslut">
+          <p id="result-text"></p>
+        </div>
+        <!-- Result Show end -->
+      </main>
+
+      <div>
+        <!-- arrow start -->
+        <div class="arrows">
+          <button id="up">↑</button>
+          <button id="left">←</button>
+          <button id="right">→</button>
+          <button id="down">↓</button>
+        </div>
+        <!-- arrow end -->
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

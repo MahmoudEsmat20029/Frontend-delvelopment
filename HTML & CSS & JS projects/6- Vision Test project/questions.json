@@ -1,0 +1,37 @@
+[
+  {
+    "direction": "left",
+    "size": "120px",
+    "borderSize": "40px"
+  },
+  {
+    "direction": "right",
+    "size": "100px",
+    "borderSize": "30px"
+  },
+  {
+    "direction": "up",
+    "size": "80px",
+    "borderSize": "20px"
+  },
+  {
+    "direction": "up",
+    "size": "60px",
+    "borderSize": "10px"
+  },
+  {
+    "direction": "down",
+    "size": "40px",
+    "borderSize": "5px"
+  },
+  {
+    "direction": "right",
+    "size": "20px",
+    "borderSize": "5px"
+  },
+  {
+    "direction": "left",
+    "size": "10px",
+    "borderSize": "5px"
+  }
+]
