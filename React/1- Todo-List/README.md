@@ -10,14 +10,14 @@
 <h2>After Click "In Progress" button</h2>
 <img src="images/Fourth_Pic.png" />
 
-<h2>After Click bin button</h2>
+<h2>After Click "bin" button</h2>
 <img src="images/Fifth_Pic.png" />
 
-<h2>After Click delete button</h2>
+<h2>After Click "delete" button</h2>
 <img src="images/Sixth_Pic.png" />
 
-<h2>After Click pen button</h2>
-<img src="images/Seventh_Pic.png" />
+<h2>After Click "pen" button</h2>
+<img src="images/Sevenrh_Pic.png" />
 
-<h2>After Click Edit button</h2>
-<img src="images/eightth_Pic.png" />
+<h2>After Click "Edit" button</h2>
+<img src="images/eighth_Pic.png" />
