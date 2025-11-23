@@ -1,16 +1,23 @@
-# React + Vite
+<h2>After create new mission</h2>
+<img src="images/1st-Pic.png" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>After complete any mission</h2>
+<img src="images/2nd-Pic.png" />
 
-Currently, two official plugins are available:
+<h2>After Click "done" button</h2>
+<img src="images/3rd-Pic.png" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>After Click "In Progress" button</h2>
+<img src="images/4th-Pic.png" />
 
-## React Compiler
+<h2>After Click bin button</h2>
+<img src="images/5th-Pic.png" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<h2>After Click delete button</h2>
+<img src="images/6th-Pic.png" />
 
-## Expanding the ESLint configuration
+<h2>After Click pen button</h2>
+<img src="images/7th-Pic.png" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<h2>After Click Edit button</h2>
+<img src="images/8th-Pic.png" />
