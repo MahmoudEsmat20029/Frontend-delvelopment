@@ -1,0 +1,43 @@
+.task {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #222;
+  margin: 10px 20px 0;
+  padding: 10px;
+}
+
+.task:hover {
+  box-shadow: 0 0 10px #222;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li {
+  margin-right: 10px;
+  cursor: pointer;
+  background: #222;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+ul li:hover,
+.active {
+  border: 2px solid #222;
+  box-shadow: 0 0 10px;
+  background: #fff;
+  color: #222;
+}
+
+.line {
+  text-decoration: line-through;
+}

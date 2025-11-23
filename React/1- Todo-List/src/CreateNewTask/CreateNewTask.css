@@ -1,0 +1,7 @@
+.create-input {
+  display: flex;
+}
+
+.create-input .input {
+  flex-grow: 1;
+}

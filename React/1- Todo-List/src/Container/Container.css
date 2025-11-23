@@ -1,0 +1,23 @@
+.card {
+  background-color: #fff;
+  color: #222;
+  width: 80%;
+  max-width: 600px;
+  height: 450px;
+  max-height: 500px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.btns {
+  text-align: center;
+  padding: 10px;
+}
+
+.create {
+  margin: 40px 20px 0;
+}
