@@ -1,0 +1,137 @@
+/* Custom Fonts */
+@font-face {
+  font-family: Almarai;
+  src: url("/fonts/Almarai/Almarai-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Almarai;
+  src: url("/fonts/Almarai/Almarai-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Almarai;
+  src: url("/fonts/Almarai/Almarai-Bold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Almarai;
+  src: url("/fonts/Almarai/Almarai-ExtraBold.ttf");
+  font-weight: 600;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.Box {
+  width: 100%;
+  padding: 10px;
+}
+
+.Box .card {
+  background: rgb(17, 45, 116);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px black;
+}
+
+.degree {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cloud-name {
+  margin: 0 20px;
+  font-size: 30px;
+}
+
+.Box button {
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 7px 20px;
+  cursor: pointer;
+  background: #112d74ff;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.Box button:hover {
+  box-shadow: 0 3px 5px black;
+}
+
+.governorates {
+  background: rgb(17, 45, 116);
+  width: 300px;
+  height: 60vh;
+  overflow: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.governorates button {
+  background: #000000bb;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 7px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.governorates button:hover,
+.governorates button.active {
+  background: #000;
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin-bottom: 0;
+    display: block;
+  }
+
+  .governorates {
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cloud-name {
+    font-size: 25px;
+    margin: 5px !important;
+  }
+
+  .degree {
+    font-size: 40px !important;
+  }
+
+  .icon {
+    font-size: 150px !important;
+  }
+
+  .temp {
+    margin: 5px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  nav {
+    display: block !important;
+  }
+}
