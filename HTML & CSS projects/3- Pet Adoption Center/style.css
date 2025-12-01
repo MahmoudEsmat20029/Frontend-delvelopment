@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fake-body {
+  width: 85%;
+  max-width: 650px;
+  background-color: #fff;
+  margin: 40px 0;
+  box-shadow: 0 0 10px;
+}
+
+/* ============== Header ============== */
+header {
+  background: radial-gradient(circle at 80%,
+      #60268a 30%,
+      #2b0a49);
+  padding: 20px 40px;
+  color: #fff;
+}
+
+header .container-head {
+  width: 45%;
+}
+
+header .container-head h1:hover {
+  text-shadow: 0 0 5px blue;
+}
+
+header .container-head p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+header .container-head button {
+  padding: 7px 15px;
+  border-radius: 15px;
+  border: none;
+  margin: 20px 0 50px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid blueviolet;
+  cursor: pointer;
+}
+
+header .container-head .active,
+header .container-head button:hover,
+form button:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+@media (max-width: 635px) {
+  button {
+    margin: 0;
+  }
+}
+
+header .container {
+  display: flex;
+  gap: 10px;
+}
+
+header .container .card {
+  border: 1px solid rgba(110, 79, 109, 0.486);
+  padding: 5px;
+}
+
+.container .card span {
+  margin-bottom: 10px;
+  color: rgb(196, 187, 187);
+}
+
+header .container .card:hover span {
+  color: #fff;
+}
+
+.container .card h5 {
+  font-weight: 400;
+}
+
+.container .card p {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 100;
+  color: rgb(196, 187, 187);
+}
+
+/* ============== Main ============== */
+main {
+  padding: 40px;
+}
+
+main ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+main ul li:hover,
+main ul li.active {
+  text-decoration: underline;
+  color: blue;
+}
+
+main .pet-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pet-container .pet-card {
+  display: flex;
+  padding: 5px;
+  height: 100px;
+  gap: 10px;
+  box-shadow: 0 0 1px;
+}
+
+.pet-container .pet-card img {
+  height: 100%;
+  width: 50px;
+}
+
+.pet-container .pet-card p {
+  font-size: 10px;
+}
+
+/* ============== Another page ============== */
+#main {
+  display: flex;
+  position: relative;
+  gap: 20px;
+}
+
+#main #pet {
+  width: 200px;
+}
+
+#main #name {
+  position: absolute;
+  bottom: 40px;
+  background-color: #ffffff85;
+  width: 200px;
+  padding: 0 10px 10px;
+}
+
+#main #name p {
+  font-size: 12px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.562);
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button {
+  padding: 7px 15px;
+  border-radius: 15px;
+  border: none;
+  color: blueviolet;
+  background-color: transparent;
+  border: 1px solid blueviolet;
+  cursor: pointer;
+}
+
+/* 635 */
