@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- Sets viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog author</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+
+  <body>
+    <div class="fake-body"><!-- Wrapper container for layout alignment -->
+
+      <header>
+        <nav>
+          <h3>Future Processing</h3><!-- Brand / logo text -->
+
+          <ul>
+            <!-- Navigation links -->
+            <li>Services</li>
+            <li>Technologies</li>
+            <li>Client</li>
+            <li>Our Company</li>
+            <li>Knowledge hub</li>
+            <li class="active">Blog</li><!-- Marked as active page -->
+            <li>Career</li>
+          </ul>
+
+          <ul>
+            <!-- Language + Contact button -->
+            <li>EN</li>
+            <li><button>Contact</button></li>
+          </ul>
+        </nav>
+
+        <!-- ================= Person Info Section ================= -->
+        <div class="person-info">
+          <!-- Breadcrumb navigation -->
+          <a id="page" href="#">BUSINESS BLOG</a> /
+          <a href="#">Mahmoud Esmat</a>
+
+          <hr><!-- Divider line -->
+
+          <div class="content"><!-- Main author info wrapper -->
+            <img id="myPic" src="images/myPic.png" alt="My picture"><!-- Author image -->
+
+            <div class="person-data-info"><!-- Author details container -->
+              <div class="name">
+                <h2>Mahmoud Esmat</h2>
+                <p>Information Security Manager at Future Processing</p>
+              </div>
+
+              <!-- Author bio paragraph -->
+              <p>
+                <strong>
+                  Esmat started as an independent security researcher and went through variety of roles in his
+                  professional career.
+                </strong>
+                Combining his professional work with the constant search for new knowledge, he
+                received a PhD in computer science. He is an author or co-author of more than 20 scientific as well as
+                popular science articles and a holder of various certifications, e.g. CISSP, OSCP.
+                <strong>He's constantly finding new challenges.</strong>
+              </p>
+            </div>
+
+            <div class="wifi-wrapper">
+              <!-- Decorative/brand graphic image -->
+              <img src="images/Frame.png" alt="My picture">
+            </div>
+          </div>
+        </div>
+        <!-- ============ End Person Info Section ============ -->
+      </header>
+
+      <main>
+        <!-- ================== Section 1: Blog Cards ================== -->
+        <section class="first-sec">
+
+          <!-- ===== Card #1 ===== -->
+          <div class="card">
+            <img src="images/pictureOne.png" alt="Next.js picture"><!-- Blog image -->
+
+            <h4>
+              The truth can be measured. Is it a myth, or is blockchain performance really that bad ?
+            </h4>
+
+            <!-- Mini author badge -->
+            <div class="small-person-info">
+              <img src="images/myPic.png" alt="My picture">
+              <h3>Mahmoud Esmat</h3>
+            </div>
+
+            <!-- Publication date -->
+            <div class="date">
+              <p>23 November 2022 | 5 min read</p>
+            </div>
+
+            <!-- Article link -->
+            <div class="link">
+              <a href="#">READ THE FULL ARTICLE</a>
+            </div>
+          </div>
+          <!-- ===== End Card #1 ===== -->
+
+          <!-- ===== Card #2 ===== -->
+          <div class="card">
+            <img src="images/pictureOne.png" alt="Tech Summary"><!-- Blog image -->
+
+            <h4>
+              The truth can be measured. Is it a myth, or is blockchain performance really that bad?
+            </h4>
+
+            <div class="small-person-info">
+              <img src="images/myPic.png" alt="My picture">
+              <h3>Mahmoud Esmat</h3>
+            </div>
+
+            <div class="date">
+              <p>23 November 2022 | 5 min read</p>
+            </div>
+
+            <div class="link">
+              <a href="#">READ THE FULL ARTICLE</a>
+            </div>
+          </div>
+          <!-- ===== End Card #2 ===== -->
+
+          <!-- ===== Card #3 ===== -->
+          <div class="card">
+            <img src="images/pictureOne.png" alt="color"><!-- Blog image -->
+
+            <h4>
+              The truth can be measured. Is it a myth, or is blockchain performance really that bad?
+            </h4>
+
+            <div class="small-person-info">
+              <img src="images/myPic.png" alt="My picture">
+              <h3>Mahmoud Esmat</h3>
+            </div>
+
+            <div class="date">
+              <p>23 November 2022 | 5 min read</p>
+            </div>
+
+            <div class="link">
+              <a href="#">READ THE FULL ARTICLE</a>
+            </div>
+          </div>
+          <!-- ===== End Card #3 ===== -->
+        </section>
+        <!-- ================== End Section 1 ================== -->
+
+        <!-- Horizontal divider -->
+        <hr>
+
+        <!-- ================== Section 2: Contact Form ================== -->
+        <section class="second-sec">
+          <div class="section-head">
+            <h2>Let's talk</h2><!-- Section title -->
+            <h4>Need more details about the Consulting Services we offer?</h4>
+            <p>Leave your contact details and we'll get back to you with answers.</p>
+          </div>
+
+          <form>
+            <!-- Two columns form layout -->
+            <div class="two-row">
+              <div class="two-colmn">
+                <label for="name">Name:</label>
+                <input id="name" type="text" required>
+
+                <label for="number">Phone number:</label>
+                <input id="number" type="number">
+              </div>
+
+              <div class="two-colmn">
+                <label for="surName">Surname:</label>
+                <input id="surName" type="text" required>
+
+                <label for="comName">Company name:</label>
+                <input id="comName" type="text">
+              </div>
+            </div>
+
+            <label for="email">Company e-mail address:</label>
+            <input id="email" type="email" required>
+
+            <label for="idea">Describe your idea:</label>
+            <input id="idea" type="text" required>
+
+            <!-- Radio buttons for NDA selection -->
+            <div class="dna">
+              <label>Do you need an NDA first?</label>
+
+              <label for="yes">Yes</label>
+              <input type="radio" name="NDA" id="yes">
+
+              <label for="no">No</label>
+              <input type="radio" name="NDA" id="no">
+            </div>
+
+            <div class="end-form"><!-- Legal info + Submit button -->
+              <p>
+                I understand that my personal data given in the contact form above will be processed for purposes of
+                answering my inquiry and for any further correspondence regarding this inquiry. The controller of your
+                personal data is Future Processing. For more information, see our <span>Privacy Policy</span>.
+              </p>
+
+              <button>SEND MESSAGE</button><!-- Form submission button -->
+            </div>
+
+          </form>
+        </section>
+        <!-- ================ End Section 2 ================ -->
+      </main>
+
+      <footer>
+        <!-- Contact box -->
+        <div class="box">
+          <div class="details">
+            <p>SEND AN EMAIL</p>
+            <h4>sales@future-processing.com</h4>
+            <h6>copy to clipboard</h6>
+            <h3><span class="num">+201012069</span> <span>...view</span></h3>
+          </div>
+          <button>USE CONTACT FORM</button>
+        </div>
+
+        <div class="first-content">
+          <!-- Footer lists / sitemap -->
+          <ul class="list">
+            <h3>SITE MAP</h3>
+            <li>Homepage</li>
+            <li>Software Services</li>
+            <li>About us</li>
+            <li>How we deliver</li>
+            <li>Clients</li>
+            <li>Knowledge Hub</li>
+            <li>Business Blog</li>
+          </ul>
+
+          <ul class="list">
+            <h3>OUR INITIATIVES</h3>
+            <li>Partner Channel</li>
+            <li>Startnearshoring</li>
+            <li>Healthcare Services</li>
+            <li>Sens.AI</li>
+            <li>Cardio 4D</li>
+            <li>IT Insights</li>
+          </ul>
+
+          <ul class="list">
+            <h3>COMPANY</h3>
+            <li>Career</li>
+            <li>Contact with PR</li>
+            <li>Going green</li>
+            <li>Information for shareholders</li>
+          </ul>
+
+          <ul class="items"><!-- Social media icons -->
+            <h3>FOLLOW US ON:</h3>
+            <li><a href="#"><img src="images/LinkedIn.svg"></a></li>
+            <li><a href="#"><img src="images/Twitter.svg"></a></li>
+            <li><a href="#"><img src="images/Facebook.svg"></a></li>
+            <li><a href="#"><img src="images/mySpace.svg"></a></li>
+            <li><a href="#"><img src="images/Youtube.svg"></a></li>
+            <li><a href="#"><img src="images/Snapchat.svg"></a></li>
+          </ul>
+        </div>
+
+        <!-- ================= Locations Section ================= -->
+        <div class="second-content">
+
+          <div class="company"><!-- Headquarters block -->
+            <img src="images/Company.png" alt="Picture of company">
+
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span><!-- Location icon -->
+
+              <div class="location">
+                <h3>Headquarters: Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a><!-- Link with arrow icon -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Multiple repeated location blocks -->
+          <div class="locations">
+
+            <!-- Each block represents a branch location -->
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="location">
+                <h3>Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a>
+              </div>
+            </div>
+
+            <!-- Duplicate blocks intentionally kept as provided by user -->
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="location">
+                <h3>Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a>
+              </div>
+            </div>
+
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="location">
+                <h3>Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a>
+              </div>
+            </div>
+
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="location">
+                <h3>Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a>
+              </div>
+            </div>
+
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="location">
+                <h3>Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a>
+              </div>
+            </div>
+
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="location">
+                <h3>Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a>
+              </div>
+            </div>
+
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="location">
+                <h3>Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a>
+              </div>
+            </div>
+
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="location">
+                <h3>Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a>
+              </div>
+            </div>
+
+            <div class="location-with-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="location">
+                <h3>Poland</h3>
+                <p>ul Bojokoso 37a</p>
+                <a href="#">Google maps <span>&#8600;</span></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="foot"><!-- Footer bottom legal text -->
+          <p>&copy; Future Processing. All rights reserved. | <span>Cookies</span> | <span>Privacy policy</span></p>
+        </div>
+
+      </footer>
+
+    </div>
+  </body>
+
+</html>
