@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+}
+
+/* ===================== Nav ===================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid rgb(219, 214, 214);
+  position: fixed;
+  width: 97vw;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+nav .right,
+nav .right .search,
+nav .center,
+nav .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---- Nav-Right ---- */
+nav .right>i {
+  font-size: 35px;
+  cursor: pointer;
+  color: blue;
+}
+
+nav .right .search {
+  background-color: rgba(219, 214, 214, 0.5);
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+nav .right .search i {
+  font-size: 15px;
+}
+
+nav .right .search input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 220px;
+}
+
+/* ---- Nav-Center ---- */
+nav .center i {
+  position: relative;
+  padding: 20px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav .center i:hover {
+  background-color: rgba(219, 214, 214, 0.5);
+}
+
+nav .center i.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+/* ---- Nav-Left ---- */
+nav .left * {
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav .left i {
+  background-color: rgba(219, 214, 214, 0.8);
+  border-radius: 50%;
+}
+
+nav .left img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* ===================== Main ===================== */
+main {
+  background-color: rgb(248, 243, 243);
+  margin-top: 60px;
+  display: flex;
+}
+
+/* ---- Main-Right ---- */
+main .right {
+  width: 23%;
+  height: calc(100vh - 60px);
+  overflow: auto;
+}
+
+main .right ul {
+  list-style: none;
+  padding: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .right ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+main .right ul .active {
+  justify-content: space-between;
+}
+
+main .right ul .activate {
+  display: none;
+}
+
+main .right ul .activate.show {
+  display: flex;
+}
+
+main .right ul li:hover,
+main .left ul li:hover {
+  background-color: rgba(219, 214, 214, 0.5);
+  cursor: pointer;
+}
+
+main .right ul li img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+main .right ul li i {
+  font-size: 22px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+
+main .right ul li .circle {
+  background-color: rgba(219, 214, 214, 0.8);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 0 7.5px;
+  font-size: 15px;
+  color: #000;
+}
+
+main .right ul li h4 {
+  font-weight: 600;
+}
+
+main .right hr {
+  width: 85%;
+  margin: 10px auto;
+  background-color: rgba(219, 214, 214, 0.1);
+}
+
+main .right ul.pictures li img {
+  height: 40px;
+  border-radius: 10px;
+}
+
+main .right h3,
+main .right p {
+  padding-right: 20px;
+  color: rgb(109, 104, 104);
+  font-weight: 400;
+}
+
+main .right p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ---- Main-Center ---- */
+main .center {
+  width: 50%;
+  height: calc(100vh - 60px);
+  overflow: auto;
+  padding: 20px;
+}
+
+main .center .write-post {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+}
+
+main .center .write-post img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+main .center .write-post input {
+  background-color: #dbd6d679;
+  flex-grow: 1;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+}
+
+main .center .write-post .icons i {
+  font-size: 20px;
+  padding: 10px;
+  color: red;
+}
+
+main .center .write-post .icons .fa-file-image {
+  color: rgb(29, 190, 29);
+}
+
+main .center .reals {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+
+/*  */
+main .center .reals::-webkit-scrollbar {
+  display: none;
+}
+
+/*  */
+
+main .center .reals .main-real,
+main .center .reals .side-real img {
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  height: 175px;
+  width: 120px;
+  cursor: pointer;
+}
+
+main .center .reals .side-real {
+  position: relative;
+}
+
+main .center .reals .main-real img {
+  width: 120px;
+}
+
+main .center .reals .main-real i,
+main .center .reals .side-real .circle {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: blue;
+  color: #fff;
+  border: 4px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .center .reals .main-real h4 {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+main .center .reals .side-real .circle {
+  top: 10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border: 4px solid blue;
+}
+
+main .center .reals .side-real h4 {
+  font-size: 14px;
+  color: #f5efef;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
+
+main .center .posts .post {
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+main .center .posts .post .post-nav,
+main .center .posts .post .post-nav .profile-data,
+main .center .posts .post .post-nav .close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+main .center .posts .post .post-nav .close {
+  gap: 20px;
+  margin-left: 10px;
+}
+
+main .center .posts .post .post-nav img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main .center .posts .post .post-nav * {
+  cursor: pointer;
+}
+
+main .center .posts img {
+  width: 100%;
+}
+
+.fa-gratipay {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+main .center .posts .post .post-foot ul,
+main .center .posts .post .post-foot ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main .center .posts .post .post-foot ul li {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 20px;
+}
+
+main .center .posts .post .post-foot ul li:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+/* ---- Main-Left ---- */
+main .left {
+  width: 20%;
+  margin: 10px auto;
+  height: 80vh;
+  overflow: auto;
+  padding: 20px;
+}
+
+main .left .nav-left,
+main .left ul>h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #948f8f;
+}
+
+main .left .nav-left .data {
+  display: flex;
+  gap: 20px;
+}
+
+main .left ul {
+  list-style: none;
+}
+
+main .left ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+  position: relative;
+}
+
+main .left ul .foot-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .left ul .foot-left i {
+  background-color: rgba(148, 143, 143, 0.2);
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main .left ul li img {
+  width: 30px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+main .left ul .active::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  background-color: green;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+main .left ul li i {
+  padding: 5px;
+}
+
+main .left ul .foot-left .fa-pen-to-square {
+  box-shadow: 2px 2px 4px gray;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
