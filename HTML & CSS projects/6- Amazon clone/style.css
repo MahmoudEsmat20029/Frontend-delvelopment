@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #dadada;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  cursor: pointer;
+}
+
+/* =================== Nav =================== */
+nav {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+nav .nav-countery {
+  display: flex;
+  align-items: end;
+  margin-left: 15px;
+  font-size: 13px;
+  color: #c4c4c4;
+}
+
+nav .nav-countery h1,
+nav .sign-in h1,
+nav .orders h1 {
+  font-size: 15px;
+  color: #fff;
+}
+
+nav .search-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-grow: 1;
+  margin: 0 15px;
+  border-radius: 5px;
+}
+
+nav .search-area>div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666666;
+  background-color: #c4c4c4;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+nav .search-area>input {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+}
+
+nav .search-area>img {
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+nav .language {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 15px;
+}
+
+nav .sign-in,
+nav .orders,
+nav .cart {
+  margin-left: 15px;
+}
+
+nav .cart a:first-child {
+  display: none;
+}
+
+nav .sign-in>div,
+nav .cart {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+/* =================== Header =================== */
+header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #fff;
+  padding: 5px 10px;
+  background-color: #333;
+}
+
+header>div {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* =================== Main =================== */
+main .bg-images {
+  width: 100%;
+  mask-image: linear-gradient(#000000 50%, transparent);
+}
+
+main .bg-images a {
+  position: absolute;
+  top: 35vh;
+  background-color: #ffffff4f;
+  padding: 30px 5px;
+  color: #0000007b;
+  z-index: 1000;
+}
+
+main .bg-images .control-next {
+  right: 0;
+}
+
+/* ====== four Picture Section ====== */
+main .four-pic-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 5px;
+  gap: 10px;
+}
+
+main .four-pic-section .card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  background-color: #fff;
+  max-width: 22%;
+  min-height: 200px;
+  z-index: 1000;
+}
+
+main .four-pic-section .card img {}
+
+main .four-pic-section .card a {
+  color: #009999;
+}
+
+main .on-images {
+  margin-top: -20vw;
+}
+
+/* ====== Slider Section ====== */
+main .slider {
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px;
+}
+
+main .slider>div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+main .slider>div::-webkit-scrollbar {
+  width: 0;
+}
+
+main .slider div img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* ====== Another Slider Section ====== */
+main .second-slider {
+  background-color: #fff;
+  padding: 10px 20px 0;
+  margin: 0 30px;
+}
+
+main .second-slider>div {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+
+main .second-slider>div::-webkit-scrollbar {
+  width: 0;
+}
+
+main .second-slider>div .product {
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+}
+
+main .second-slider>div .product img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+main .second-slider>div .product p {
+  color: red;
+  margin: 10px 0;
+}
+
+main .second-slider>div .product p>span {
+  background-color: red;
+  color: #fff;
+  padding: 0 5px;
+}
+
+main .second-slider>div .product h3 {
+  font-weight: 500;
+}
+
+main .second-slider>div .product h4 {
+  font-weight: 300;
+}
+
+/* =================== Footer =================== */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #131921;
+  color: #fff;
+}
+
+footer img {
+  margin: 0 20px;
+}
+
+footer p {
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+/* =================== Media query =================== */
+@media (max-width: 970px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  main .four-pic-section .card {
+    max-width: 30%;
+  }
+
+  nav .search-area {
+    order: 5;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 830px) {
+  main .four-pic-section .card {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 670px) {
+
+  nav .nav-countery,
+  nav .language,
+  nav .orders,
+  nav .cart p,
+  nav .sign-in {
+    display: none;
+  }
+
+  nav .cart a:first-child {
+    display: block;
+  }
+}
+
+@media (max-width: 530px) {
+  main .four-pic-section .card {
+    max-width: 100%;
+  }
+}
