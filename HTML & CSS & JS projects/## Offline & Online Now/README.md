@@ -29,3 +29,10 @@ Works in all modern browsers that support:
 
 - `navigator.onLine` API
 - `online` and `offline` events
+
+## When it On-Line
+<img src="images/First_Pic.png" />
+
+## When it Off-Line
+<img src="images/Second_Pic.png" />
+
