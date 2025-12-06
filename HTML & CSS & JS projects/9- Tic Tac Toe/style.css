@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Oleo Script", system-ui;
+}
+
+main.background {
+  height: 100vh;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.background .display span,
+.display .win {
+  color: green;
+}
+
+.display p {
+  font-size: 20px;
+}
+
+.background .table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.background .table div {
+  border: 1px solid #fff;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.background .table div:hover {
+  background-color: #444;
+}
+
+.button button {
+  background-color: red;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}

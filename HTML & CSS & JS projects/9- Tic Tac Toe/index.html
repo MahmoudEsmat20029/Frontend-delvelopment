@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main class="background">
+      <section class="title">
+        <h1>Tic Tac Toe</h1>
+      </section>
+
+      <section class="display">
+        <p class="display-p">player <span class="display-playerX">X</span>'s turn</p>
+        <p class="win"></p>
+      </section>
+
+      <section class="table">
+        <div id="0" class="square" onclick="squareClick(this.id)"></div>
+        <div id="1" class="square" onclick="squareClick(this.id)"></div>
+        <div id="2" class="square" onclick="squareClick(this.id)"></div>
+        <div id="3" class="square" onclick="squareClick(this.id)"></div>
+        <div id="4" class="square" onclick="squareClick(this.id)"></div>
+        <div id="5" class="square" onclick="squareClick(this.id)"></div>
+        <div id="6" class="square" onclick="squareClick(this.id)"></div>
+        <div id="7" class="square" onclick="squareClick(this.id)"></div>
+        <div id="8" class="square" onclick="squareClick(this.id)"></div>
+      </section>
+
+      <section class="button">
+        <button>Reset</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
