@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #335;
+}
+
+.container {
+  margin: 100px;
+  width: 30%;
+}
+
+.container h1 {
+  font-weight: 200;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.container h1 span {
+  color: green;
+  border-bottom: 2px solid green;
+}
+
+#pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+#pass input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+#pass button {
+  cursor: pointer;
+  color: green;
+  border: none;
+  font-size: 20px;
+}
+
+.container>button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: green;
+  border-radius: 5px;
+}
+
+@media (max-width: 1100px) {
+  .container h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 930px) {
+  .container h1 {
+    font-size: 20px;
+  }
+
+  #pass input {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 50%;
+  }
+
+  .container h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 22px;
+  }
+}
