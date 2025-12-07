@@ -5,4 +5,5 @@
 <img src="images/Second_Pic.png" />
 
 <h2>After Click "clipboard" button</h2>
-<img src="images/Third_Pic.png />
+<img src="images/Third_Pic.png" />
+
