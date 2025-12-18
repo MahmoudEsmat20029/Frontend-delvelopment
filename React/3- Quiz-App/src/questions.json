@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "answer_1": "A) Hyperlinks and Text Markup Language",
+    "answer_2": "B) Home Tool Markup Language",
+    "answer_3": "C) Hyper Text Markup Language",
+    "answer_4": "D) Hyper Transfer Markup Language",
+    "right_answer": 3
+  },
+  {
+    "question": "Which HTML element is used to define the largest heading?",
+    "answer_1": "A) <heading>",
+    "answer_2": "B) <h6>",
+    "answer_3": "C) <h1>",
+    "answer_4": "D) <head>",
+    "right_answer": 3
+  },
+  {
+    "question": "Which HTML tag is used to insert an image?",
+    "answer_1": "A) <img>",
+    "answer_2": "B) <image>",
+    "answer_3": "C) <src>",
+    "answer_4": "D) <picture>",
+    "right_answer": 1
+  },
+  {
+    "question": "Which attribute is used to provide an alternative text for an image?",
+    "answer_1": "A) title",
+    "answer_2": "B) alt",
+    "answer_3": "C) src",
+    "answer_4": "D) href",
+    "right_answer": 2
+  },
+  {
+    "question": "Which HTML element is used to create a link to another page?",
+    "answer_1": "A) <a>",
+    "answer_2": "B) <link>",
+    "answer_3": "C) <href>",
+    "answer_4": "D) <url>",
+    "right_answer": 1
+  }
+]
