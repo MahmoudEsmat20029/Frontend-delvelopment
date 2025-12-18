@@ -24,6 +24,37 @@ header nav h3:hover {
   /* Slight zoom on hover */
 }
 
+header nav h3 span {
+  position: relative;
+}
+
+header nav h3 span:before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 26px;
+  background-color: #000;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+header nav h3 span:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  left: -45px;
+  top: calc(50% - 13px);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 13px;
+  border-color: #fff #000 #000 #fff;
+  transform: rotate(-45deg);
+}
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -41,11 +72,42 @@ nav ul .active {
 
 button {
   background: linear-gradient(270.04deg, #FF6000 0.03%, #FFA000 99.95%);
-  padding: 20px 50px;
+  padding: 20px;
+  width: 200px;
+  text-align: left;
   border: none;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+  position: relative;
+}
+
+ul li button:before,
+footer .box button::before,
+form .end-form button::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 50px;
+  height: 2px;
+  top: 50%;
+  right: 30px;
+}
+
+ul li button:after,
+footer .box button::after,
+form .end-form button::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 2px;
+  height: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff #fff transparent transparent;
+  transform: rotate(45deg);
+  top: calc(50% - 2px);
+  right: 30px;
 }
 
 /* ===================== Header: Person Info Section ===================== */
@@ -274,9 +336,10 @@ form .end-form {
 }
 
 form .end-form button {
-  background-color: red;
-  /* Submit button */
-  padding: 20px 120px;
+  background: linear-gradient(270.04deg, #FF6000 0.03%, #FFA000 99.95%);
+  border: none;
+  padding: 20px;
+  width: 120%;
   box-shadow: 20px 40px 50px rgba(0, 0, 0, 0.4);
 }
 
@@ -337,6 +400,10 @@ footer .box .details {
 
 footer .box button {
   width: 100%;
+}
+
+footer .box button::before {
+  width: 100px;
 }
 
 /* Footer main layout */
@@ -459,3 +526,5 @@ footer .second-content {
 .foot p span {
   color: rgba(255, 96, 0, 1);
 }
+
+/* background: #252425; */
