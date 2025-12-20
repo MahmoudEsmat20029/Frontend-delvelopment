@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: #222;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #5e52524d;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container h1,
+.container h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.container hr {
+  border: 1px solid;
+  margin: 20px 0;
+}
+
+.container .content {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+  justify-content: center;
+  gap: 2px;
+}
+
+.container .content .box {
+  border: 2px solid #222;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 70px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content .x-box {
+  color: green;
+}
+
+.container .content .o-box {
+  color: red;
+}
+
+.container button {
+  margin: 20px 0 0;
+  padding: 5px 30px;
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #222;
+  color: #fff;
+}
+
+.container button:hover {
+  background-color: rgb(80, 80, 80);
+}
