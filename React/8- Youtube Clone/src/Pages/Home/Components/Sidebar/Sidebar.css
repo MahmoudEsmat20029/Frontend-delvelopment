@@ -1,0 +1,87 @@
+.sidebar {
+  height: 105vh;
+  box-shadow: 0 2px 4px gray;
+  width: 13rem;
+}
+.sidebar .sidebar-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  position: relative;
+  padding: 7px;
+}
+.sidebar .sidebar-section p {
+  margin-bottom: 0;
+  transition: color 0.3s;
+}
+.sidebar .sidebar-section img {
+  width: 30px;
+  border-radius: 50%;
+}
+.sidebar .sidebar-section::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  left: 10px;
+  bottom: 0;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+.sidebar .sidebar-section:hover {
+  cursor: pointer;
+}
+.sidebar .sidebar-section:hover::after {
+  background-color: red;
+}
+.sidebar .sidebar-section:hover p {
+  color: red;
+}
+.sidebar hr {
+  width: 80%;
+  margin: 5px auto;
+}
+.sidebar h6 {
+  margin-left: 10px;
+  color: gray;
+}
+.sidebar .active {
+  position: relative;
+}
+.sidebar .active::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  left: 10px;
+  bottom: 0;
+  background-color: red;
+}
+.sidebar .active p {
+  color: red;
+}
+
+.activated {
+  width: 3rem;
+}
+.activated .sidebar-section p {
+  display: none;
+}
+.activated .active {
+  position: relative;
+}
+.activated .active::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  left: 10px;
+  bottom: 0;
+  background-color: red;
+  left: 9px;
+}
+.activated h6 {
+  display: none;
+}/*# sourceMappingURL=Sidebar.css.map */

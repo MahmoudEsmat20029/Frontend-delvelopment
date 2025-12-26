@@ -1,0 +1,19 @@
+.next-video {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.next-video img {
+  box-shadow: 0 2px 4px gray;
+}
+.next-video div h6 {
+  color: rgb(61, 60, 60);
+  margin-top: 10px;
+}
+.next-video div h6 + p {
+  font-weight: 400;
+  margin: 0;
+}
+.next-video div p + p {
+  font-size: 14px;
+}/*# sourceMappingURL=RightSection.css.map */

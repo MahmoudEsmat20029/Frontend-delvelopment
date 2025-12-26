@@ -1,0 +1,63 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  box-shadow: 0 0 4px gray;
+  /* ----- Left ----- */
+  /* ----- Middle ----- */
+  /* ----- Right ----- */
+}
+nav .left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+nav .left-nav img {
+  width: 20px;
+}
+nav .left-nav i {
+  font-size: 25px;
+  color: red;
+}
+nav .middle-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  width: 40%;
+  border-radius: 40px;
+  padding: 5px 10px;
+  gap: 10px;
+}
+nav .middle-nav input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+nav .middle-nav:hover {
+  box-shadow: 0 0 2px #000;
+}
+nav .right-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+nav .right-nav img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+@media (max-width: 550px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav .middle-nav {
+    order: 10;
+    width: 100%;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

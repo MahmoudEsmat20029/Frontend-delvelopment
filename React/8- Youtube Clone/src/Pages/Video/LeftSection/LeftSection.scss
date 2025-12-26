@@ -1,0 +1,121 @@
+@import "../../../styles/mixins";
+
+main {
+  width: 65%;
+  height: 20px;
+
+  // First Section
+  section.video-data {
+    .views {
+      @include display-flex(space-between, center);
+
+      > p {
+        color: gray;
+        margin: 0;
+      }
+
+      .reacts-container {
+        @include display-flex;
+        gap: 10px;
+
+        .reacts {
+          @include display-flex;
+
+          img {
+            width: 20px;
+          }
+
+          p {
+            margin: 0 4px;
+          }
+        }
+      }
+    }
+  }
+
+  > hr {
+    margin: 10px;
+  }
+
+  // Second Section
+  section.comments {
+    @include display-flex(flex-start, flex-start);
+    gap: 10px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+    .video-description {
+      flex-grow: 1;
+
+      .subscription {
+        @include display-flex(space-between, flex-start);
+
+        div {
+          h6 {
+            margin: 0;
+          }
+
+          p {
+            color: gray;
+            font-size: 14px;
+          }
+        }
+
+        button {
+          background-color: #f46376;
+          box-shadow: 0 2px 4px gray;
+          color: #fff;
+          padding: 5px 20px;
+          border-radius: 2px;
+          border: none;
+          font-size: 15px;
+        }
+      }
+
+      p {
+        color: rgb(53, 52, 52);
+      }
+
+      > h6 {
+        margin-bottom: 20px;
+      }
+
+      .comment {
+        @include display-flex(flex-start, flex-start);
+        gap: 10px;
+
+        .commenter {
+          h6 span {
+            font-size: 13px;
+            font-weight: 400;
+            color: gray;
+            margin-left: 10px;
+          }
+
+          .commenter-reacts {
+            @include display-flex(flex-start);
+            gap: 20px;
+            margin-bottom: 20px;
+
+            > div {
+              @include display-flex;
+              gap: 7px;
+            }
+
+            img {
+              width: 20px;
+            }
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

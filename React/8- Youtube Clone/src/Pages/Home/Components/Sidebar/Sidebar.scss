@@ -1,0 +1,87 @@
+@import "../../../../styles/mixins";
+
+.sidebar {
+  height: 105vh;
+  box-shadow: 0 2px 4px gray;
+  width: 13rem;
+
+  .sidebar-section {
+    @include display-flex(flex-start, center);
+    gap: 10px;
+    padding-left: 10px;
+    position: relative;
+    padding: 7px;
+
+    p {
+      margin-bottom: 0;
+      transition: color 0.3s;
+    }
+
+    img {
+      width: 30px;
+      border-radius: 50%;
+    }
+
+    &::after {
+      @include underline-indicator(transparent);
+      transition: background-color 0.3s;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &::after {
+        background-color: red;
+      }
+
+      p {
+        color: red;
+      }
+    }
+  }
+
+  hr {
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  h6 {
+    margin-left: 10px;
+    color: gray;
+  }
+
+  .active {
+    position: relative;
+
+    &::after {
+      @include underline-indicator;
+    }
+
+    p {
+      color: red;
+    }
+  }
+}
+
+.activated {
+  width: 3rem;
+
+  .sidebar-section {
+    p {
+      display: none;
+    }
+  }
+
+  .active {
+    position: relative;
+
+    &::after {
+      @include underline-indicator;
+      left: 9px;
+    }
+  }
+
+  h6 {
+    display: none;
+  }
+}

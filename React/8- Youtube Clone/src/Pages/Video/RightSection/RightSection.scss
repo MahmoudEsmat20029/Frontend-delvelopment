@@ -1,0 +1,25 @@
+.next-video {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  img {
+    box-shadow: 0 2px 4px gray;
+  }
+
+  div {
+    h6 {
+      color: rgb(61, 60, 60);
+      margin-top: 10px;
+    }
+
+    h6 + p {
+      font-weight: 400;
+      margin: 0;
+    }
+
+    p + p {
+      font-size: 14px;
+    }
+  }
+}
