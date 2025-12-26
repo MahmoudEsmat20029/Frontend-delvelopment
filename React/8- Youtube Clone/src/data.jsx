@@ -1,4 +1,4 @@
-export const API_KEY = "AIzaSyBzzz14lhF6BzD3Mve_jIla8V-uHkwHERs";
+export const API_KEY = "put your YouTube api key here ya brooooo 😂";
 
 export const value_converter = (value) => {
   if (value >= 1000000) {
@@ -9,3 +9,4 @@ export const value_converter = (value) => {
     return value;
   }
 };
+
