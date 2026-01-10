@@ -1,0 +1,81 @@
+nav.navbar {
+  padding: 0;
+
+  .container-fluid {
+    background-color: var(--body-backgroud);
+    border-bottom: 1px solid var(--small-bg-color);
+    transition: background-color 0.4s ease, border-bottom 0.4s ease;
+
+    .navbar-toggler {
+      .menu-toggler-icon {
+        font-size: 30px;
+        color: var(--small-bg-color);
+      }
+    }
+
+    > a.navbar-brand {
+      font-size: 30px;
+      font-weight: 600;
+      background: linear-gradient(
+        to right,
+        var(--small-bg-color) 0%,
+        var(--large-bg-color) 100%
+      );
+      transition: all 0.4s ease;
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    #navbarSupportedContent {
+      .middle-nav {
+        li {
+          > a {
+            margin: 5px 5px 0;
+            padding: 5px;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              width: 0;
+              height: 2px;
+              background-color: var(--small-bg-color);
+              transition: all 0.3s ease;
+              transform: translateX(-50%);
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+          }
+
+          > a.active {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+
+        a,
+        button {
+          color: var(--body-color);
+        }
+      }
+
+      > a {
+        color: var(--small-bg-color);
+        transition: color 0.4s ease;
+        text-decoration: none;
+
+        .new-icon {
+          font-size: 15px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+section.projects {
+  background-color: var(--body-backgroud);
+  transition: background-color 0.4s;
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+section.projects header {
+  margin-bottom: 40px;
+}
+
+section.projects header>h1 {
+  font-size: 70px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+section.projects header>h1>span {
+  background: linear-gradient(to right, var(--small-bg-color) 0%, var(--large-bg-color) 100%);
+  transition: all 0.4s ease;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.projects header>.overview {
+  font-size: 22px;
+  color: rgb(54, 64, 73);
+}
+
+section.projects .buttons-selection {
+  margin: 20px;
+}
+
+section.projects .buttons-selection ul {
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+section.projects .buttons-selection ul li {
+  background-color: var(--card-bg-color);
+  border: 2px solid var(--card-border-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  color: var(--tab-text-color);
+}
+
+section.projects .buttons-selection ul li.active,
+section.projects .buttons-selection ul li:hover {
+  background-color: var(--small-bg-color);
+  border-color: var(--small-bg-color);
+  cursor: pointer;
+  color: #fff;
+}
+
+section.projects .row .card {
+  background-color: var(--card-bg-color);
+  border: 2px solid var(--card-border-color);
+  box-shadow: 0 0 30px 5px var(--card-bg-hover-color);
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section.projects .row .card:hover {
+  transform: translateY(-10px);
+}
+
+section.projects .row .card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+section.projects .row .card .card-body .card-footer-content {
+  margin-top: auto;
+}
+
+section.projects .row .card .card-body .card-footer-content .tech {
+  /* background-color: var(--small-bg-color); */
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+section.projects .row .card .card-body .card-title {
+  background: linear-gradient(to right,
+      var(--small-bg-color) 0%,
+      var(--large-bg-color) 100%);
+  transition: all 0.4s ease;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.projects .row .card .card-body .card-text {
+  color: var(--card-text-color);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+section.projects .row .card .card-body a {
+  background-color: var(--main-color);
+  border-color: var(--small-bg-color);
+  color: var(--body-backgroud);
+}
+
+section.projects .row .card .card-body a:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+section.projects .row .card .card-body .about {
+  border: 1px solid var(--small-bg-color);
+  background-color: rgba(0, 0, 0, 0.25);
+  color: var(--small-bg-color);
+  padding: 3px 10px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+section.projects .row .card .card-body .tech {
+  border: 1px solid var(--small-bg-color);
+  color: var(--small-bg-color) !important;
+  padding: 3px 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s;
+}

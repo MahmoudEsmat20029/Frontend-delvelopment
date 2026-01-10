@@ -1,0 +1,112 @@
+.dialog section {
+  background-color: black;
+  box-shadow: 0 0 20px 4px var(--small-bg-color) inset;
+  padding: 20px;
+  color: var(--body-color);
+}
+
+.dialog header.header {
+  display: flex;
+  gap: 30px;
+}
+
+.dialog header.header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px 2px var(--small-bg-color), -5px -5px 20px 2px blueviolet;
+}
+
+.dialog header.header p {
+  font-size: 15px;
+  color: rgb(185, 185, 185);
+}
+
+.dialog header.header ul,
+main.main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.dialog header.header ul li {
+  background-color: rgb(30, 41, 57);
+  border: 2px solid rgb(74, 85, 101);
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dialog header.header ul li:hover {
+  background-color: rgba(30, 41, 57, 0.7);
+  transform: scale(1.1);
+}
+
+main.main {
+  margin: 20px;
+}
+
+main.main ul {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+main.main ul li {
+  background-color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+main.main ul li:hover {
+  background-color: var(--small-bg-color);
+}
+
+main.main button {
+  background-color: rgb(30, 41, 57);
+  border: 4px solid rgb(74, 85, 101);
+  color: var(--body-color);
+  padding: 5px 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+main.main button.active,
+main.main button:hover {
+  background-color: var(--main-color);
+}
+
+main.main button.active:hover {
+  background-color: rgb(226, 38, 38);
+}
+
+@media (max-width: 605px) {
+  .dialog header.header {
+    flex-direction: column;
+  }
+
+  .dialog header.header img {
+    margin: 10px auto 0;
+  }
+
+  .dialog header.header ul li span {
+    display: none;
+  }
+
+  main.main {
+    margin: 20px 0;
+  }
+
+  main.main button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

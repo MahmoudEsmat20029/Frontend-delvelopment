@@ -1,0 +1,56 @@
+nav.navbar {
+  padding: 0;
+}
+nav.navbar .container-fluid {
+  background-color: var(--body-backgroud);
+  border-bottom: 1px solid var(--small-bg-color);
+  transition: background-color 0.4s ease, border-bottom 0.4s ease;
+}
+nav.navbar .container-fluid .navbar-toggler .menu-toggler-icon {
+  font-size: 30px;
+  color: var(--small-bg-color);
+}
+nav.navbar .container-fluid > a.navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, var(--small-bg-color) 0%, var(--large-bg-color) 100%);
+  transition: all 0.4s ease;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav.navbar .container-fluid #navbarSupportedContent .middle-nav li > a {
+  margin: 5px 5px 0;
+  padding: 5px;
+  position: relative;
+}
+nav.navbar .container-fluid #navbarSupportedContent .middle-nav li > a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--small-bg-color);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+nav.navbar .container-fluid #navbarSupportedContent .middle-nav li > a:hover::after {
+  width: 100%;
+}
+nav.navbar .container-fluid #navbarSupportedContent .middle-nav li > a.active::after {
+  width: 100%;
+}
+nav.navbar .container-fluid #navbarSupportedContent .middle-nav a,
+nav.navbar .container-fluid #navbarSupportedContent .middle-nav button {
+  color: var(--body-color);
+}
+nav.navbar .container-fluid #navbarSupportedContent > a {
+  color: var(--small-bg-color);
+  transition: color 0.4s ease;
+  text-decoration: none;
+}
+nav.navbar .container-fluid #navbarSupportedContent > a .new-icon {
+  font-size: 15px;
+  margin-right: 10px;
+}/*# sourceMappingURL=Navbar.css.map */

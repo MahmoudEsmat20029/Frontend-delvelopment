@@ -1,0 +1,179 @@
+.main-body {
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 31ch;
+  }
+  60% {
+    width: 31ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+//! -------------- Home --------------
+section.home-section {
+  .home-right {
+    h1 {
+      font-size: 70px;
+
+      span {
+        background: linear-gradient(
+          to right,
+          var(--small-bg-color) 0%,
+          var(--large-bg-color) 100%
+        );
+        transition: all 0.4s ease;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    p.track {
+      font-size: 25px;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+      border-right: 2px solid var(--small-bg-color);
+
+      animation: typing 10s steps(31, end) infinite alternate,
+        blink 0.8s step-end infinite;
+      animation-delay: 0.5s;
+    }
+
+    p.about-me {
+      font-size: 23px;
+      letter-spacing: 0.5px;
+
+      span {
+        color: var(--small-bg-color);
+      }
+    }
+
+    .icons {
+      a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 24px;
+        margin: 10px;
+        padding: 4px;
+        border: 1px solid var(--small-bg-color);
+        color: var(--small-bg-color);
+        position: relative;
+
+        &:hover {
+          background-color: var(--small-bg-color);
+          color: var(--body-backgroud);
+        }
+
+        /* ===== Tooltip box ===== */
+        &::after {
+          content: attr(data-tip);
+          position: absolute;
+          bottom: -38px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: var(--small-bg-color);
+          color: var(--body-backgroud);
+          padding: 4px 8px;
+          font-size: 12px;
+          border-radius: 6px;
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.3s ease;
+        }
+
+        /* ===== Tooltip arrow ===== */
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -14px;
+          left: 50%;
+          transform: translateX(-50%);
+          border-width: 6px;
+          border-style: solid;
+          border-color: transparent transparent var(--small-bg-color)
+            transparent;
+
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.3s ease;
+        }
+
+        &:hover::after,
+        &:hover::before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .home-left {
+    text-align: center;
+    .myPic {
+      width: 25rem;
+      height: 25rem;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 20px 1px var(--small-bg-color);
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  section.home-section .home-left .myPic {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  section.home-section {
+    .home-right {
+      h1 {
+        font-size: 50px;
+      }
+      p.track {
+        font-size: 20px;
+      }
+      p.about-me {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .main-body {
+    padding: 20px;
+  }
+
+  section.home-section {
+    .home-right {
+      h1 {
+        font-size: 30px;
+      }
+      p.track {
+        font-size: 18px;
+      }
+      
+    }
+  }
+}

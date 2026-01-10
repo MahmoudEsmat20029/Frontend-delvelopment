@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-color: var(--scrollbar-color) rgb(0, 0, 0);
+  scrollbar-width: thin;
+}
+
+/**----------- For Theme -----------*/
+:root {
+  --body-backgroud: black;
+  --body-color: white;
+  --main-color: red;
+  --scrollbar-color: rgb(239, 68, 68);
+  --small-bg-color: rgb(251, 44, 54);
+  --large-bg-color: rgb(255, 162, 162);
+  --card-text-color: rgb(153, 161, 175);
+  --card-bg-color: rgb(16, 24, 40);
+  --card-bg-hover-color: rgb(16, 24, 40);
+  --card-border-color: rgb(30, 41, 57);
+  --icon-bg-color: rgba(193, 0, 7, 0.2);
+  --tab-text-color: #fff;
+}
+
+[data-theme="light"] {
+  --body-backgroud: white;
+  --body-color: black;
+  --main-color: blue;
+  --scrollbar-color: rgb(68, 68, 239);
+  --small-bg-color: blue;
+  --large-bg-color: rgb(148, 148, 231);
+  --card-text-color: black;
+  --card-bg-color: #fff;
+  --card-bg-hover-color: #fff;
+  --card-border-color: rgb(148, 148, 231);
+  --icon-bg-color: rgba(55, 0, 193, 0.12);
+  --tab-text-color: blue;
+}
